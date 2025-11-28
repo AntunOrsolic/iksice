@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Iksice za Futsal</title>
+</head>
+
+<body>
+    <header class="site-header" id="home">
+        <nav class="navbar">
+            <div class="brand">
+                <img class="logo" src="images\logo.svg" alt="Iksice brand logo">
+                <span>Iksice za Futsal</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Početna</a></li>
+                <li><a href="#iksice">Iksice</a></li>
+                <li><a href="#velicine">Veličine</a></li>
+                <li><a href="#narudzba" class="active">Narudžba</a></li>
+            </ul>
+        </nav>
+        <div class="hero">
+            <p class="eyebrow">Nova kolekcija</p>
+            <h1>Futsal tenisice spremne za teren</h1>
+            <p class="hero-copy">
+                Upoznaj pažljivo odabran lineup modela koji spajaju preciznost, fleksibilnost i stil.
+                Turniri uskoro počinju - izaberi svoj par iksica i dominiraj na terenu!
+            </p>
+            <a class="cta" href="#iksice">Pogledaj modele</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="collection" id="iksice">
+            <header class="section-heading">
+                <h2>Izbor modela</h2>
+                <p>Svaki model ima dostupne one veličine koje vidite ispod određenog modela.</p>
+            </header>
+            <div class="card-grid">
+                <article class="shoe-card">
+                    <img src="images\gresca_blue.webp" alt="Model Gresca" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>Gresca Blue</h3>
+                        <p class="size-label">Veličine: 40, 41, 43, 44</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\continental_v2_blue.webp" alt="Model Continental V2" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>Continental V2 Blue</h3>
+                        <p class="size-label">Veličine: 41, 42, 44</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\g3_profit_navy2.webp" alt="Model G3 Profit" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>G3 Profit Navy</h3>
+                        <p class="size-label">Veličine: 45</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\continental_white.webp" alt="Model Continental" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>Continental White</h3>
+                        <p class="size-label">Veličine: 41</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\g3_profit_white.webp" alt="Model G3 Profit" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>G3 Profit White</h3>
+                        <p class="size-label">Veličine: 42, 44</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\continental_v2_white.webp" alt="Model Continental V2" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>Continental V2 White</h3>
+                        <p class="size-label">Veličine: 46</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\gresca_yellow.webp" alt="Model Gresca" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>Gresca Yellow</h3>
+                        <p class="size-label">Veličine: 39, 40</p>
+                    </div>
+                </article>
+                <article class="shoe-card">
+                    <img src="images\gresca_black.webp" alt="Model Gresca" class="shoe-image">
+                    <div class="shoe-info">
+                        <h3>Gresca Black</h3>
+                        <p class="size-label">Veličine: 43</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="info-panels" id="velicine">
+            <div class="info-card">
+                <h3>Oprezno s veličinama</h3>
+                <p class="size-info">Iksice su specifične kad su u pitanju njihove veličine u odnosu na druge tenisice. 
+                   U odnosu na Nike modele, Iksice su manje za dva broja. Ako nosite Nike 43, Iksice su vam 41.
+                   Najbolje je izmjeriti i provjeriti potrebnu veličinu <a href="https://www.munichsports.com/footwear-size-guide">OVDJE</a></p>
+            </div>
+        </section>
+
+        <section class="order-section" id="narudzba">
+            <div class="order-form-container">
+                <h2>Narudžba</h2>
+                <form id="order-form" class="order-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="ime">Ime *</label>
+                            <input type="text" id="ime" name="ime" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="prezime">Prezime *</label>
+                            <input type="text" id="prezime" name="prezime" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon">Broj mobitela *</label>
+                            <input type="tel" id="telefon" name="telefon" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="model">Model tenisica *</label>
+                            <select id="model" name="model" required>
+                                <option value="">-- Odaberi model --</option>
+                                <option value="Gresca Blue">Gresca Blue</option>
+                                <option value="Continental V2 Blue">Continental V2 Blue</option>
+                                <option value="G3 Profit Navy">G3 Profit Navy</option>
+                                <option value="Continental White">Continental White</option>
+                                <option value="G3 Profit White">G3 Profit White</option>
+                                <option value="Continental V2 White">Continental V2 White</option>
+                                <option value="Gresca Yellow">Gresca Yellow</option>
+                                <option value="Gresca Black">Gresca Black</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="velicina">Veličina *</label>
+                            <select id="velicina" name="velicina" required disabled>
+                                <option value="">-- Prvo odaberi model --</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="poruka">Dodatna poruka</label>
+                        <textarea id="poruka" name="poruka" rows="4" maxlength="500" placeholder="Ovdje možete dodati dodatne informacije ili napomene..."></textarea>
+                        <div class="char-counter">
+                            <span id="char-count">0</span>/500 znakova
+                        </div>
+                    </div>
+                    <button type="submit" class="submit-btn">Pošalji narudžbu</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-image" id="lightbox-image" src="" alt="Uvećana slika tenisice">
+    </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
